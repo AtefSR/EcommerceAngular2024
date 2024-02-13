@@ -1,0 +1,49 @@
+<div class="form-wrapper">
+    <h2>Modifier un article</h2>
+    <div class="mobile-form">
+      <div class="mb-3">
+          <label for="reference" class="form-label">Référence</label>
+          <input type="text" class="form-control" id="reference" name="reference" [(ngModel)]="article.reference"  placeholder="Reference">
+      </div>
+  
+      <div class="mb-3">
+        <label for="designation" class="form-label">Désignation</label>
+        <input type="text" class="form-control" id="designation" name="designation" [(ngModel)]="article.designation" placeholder="designation">
+      </div>
+  
+      <div class="mb-3">
+        <label for="prix" class="form-label">Prix</label>
+        <input type="text" class="form-control" id="prix" name="prix" [(ngModel)]="article.prix" placeholder="prix">
+      </div>
+  
+      <div class="mb-3">
+        <label for="marque" class="form-label">Marque</label>
+        <input type="text" class="form-control" id="marque" name="marque" [(ngModel)]="article.marque" placeholder="marque">
+      </div>
+  
+      <div class="mb-3">
+        <label for="qtestock" class="form-label">Quantité</label>
+        <input type="text" class="form-control" id="qtestock" name="qtestock" [(ngModel)]="article.qtestock" placeholder="qtestock">
+      </div>
+      
+      <div class="mb-3">
+        <label for="scategorie" class="form-label">Sous catégorie</label>
+        <input type="text" class="form-control" id="scategorie" name="scategorie" [(ngModel)]="article.scategorieID"  placeholder="Sous catégorie">
+      </div>
+  
+      <div class="mb-3">
+        <label for="image" class="form-label">Image</label>
+        <input type="text" class="form-control" id="imageart" name="imageart" [(ngModel)]="article.imageart" placeholder="Image">
+      </div>
+  
+      <div>
+        <button type="button" class="btn btn-success" (click)="modifarticle()">Enregistrer</button>
+      </div>
+  
+      <div>
+        <button type="button" class="btn btn-info" routerLink="/productstable">Annuler</button>
+      </div>
+    </div>
+  </div>
+  
+  
